@@ -1,0 +1,21 @@
+# Logs
+logs
+*.log
+
+#Generic
+.*.swp
+._*
+.DS_Store
+.git
+.hg
+.npmrc
+package-lock.json
+ß
+#Tests
+/test
+
+#Bin
+/bin
+
+#Examples
+/examples

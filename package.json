@@ -1,0 +1,35 @@
+{
+    "name": "dev-http-server",
+    "description": "Simple Http server base on NodeJS implemented base features for debugging and testing javascript",
+    "homepage": "https://github.com/mrshuvava/simple-http-server",
+    "author": {
+        "name": "Vladimir Shurygin",
+        "url": "https://github.com/shuvava/dev-http-server"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/shuvava/dev-http-server.git"
+    },
+    "bugs": {
+        "url": ""
+    },
+    "engines": {
+        "node": ">=7.0.0"
+    },
+    "keywords": [
+        "Http",
+        "testing",
+        "development"
+    ],
+    "license": "GPL-3.0",
+    "version": "0.0.1",
+    "devDependencies": {
+        "eslint": "~3.4.0",
+        "eslint-config-airbnb-base": "~5.0.2",
+        "eslint-plugin-import": "^1.14.0"
+    },
+    "dependencies": {
+        "lodash": "^4.7.0",
+        "mime": ">=1.2.5"
+    }
+}
