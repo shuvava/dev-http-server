@@ -20,7 +20,7 @@ httpSrv.onPost('/page', (req, res) => {
 HttpSrv.run({ httpSrv });
 ```
 If server run correctly, you see following message:
-> Http Server started on 127.0.0.1:$1337
+> Http Server started on 127.0.0.1:1337
 ## Available Options
 HttpSrv.run method has following options
 ```javascript
@@ -65,6 +65,25 @@ httpSrv.onPost('/page', (req, res) => {
     res.writeHead(200, { 'Content-Type': 'text/plain' });
     res.end('Page Two');
 });
+// run server
+HttpSrv.run({ httpSrv });
+```
+### Dynamic REST response
+[rest-dynamic-response](https://github.com/shuvava/dev-http-server/tree/master/examples/rest-dynamic-response)
+```javascript
+// add reference to the module
+const HttpSrv = require('dev-http-server');
+// create instance
+const httpSrv = new HttpSrv();
+
+// add for url /test all possible CRUD operation
+// GET, POST PUT DELETE
+// for GET /test server will return all content of file db.json
+// GET /test/1 return object with id=1
+// PUT add new object into db
+// POST update exist record in db.json
+httpSrv.setJson('/test', 'src/db.json', 'id', false);
+
 // run server
 HttpSrv.run({ httpSrv });
 ```
