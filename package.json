@@ -11,7 +11,7 @@
         "url": "git://github.com/shuvava/dev-http-server.git"
     },
     "bugs": {
-        "url": ""
+        "url": "https://github.com/shuvava/dev-http-server/issues"
     },
     "engines": {
         "node": ">=7.0.0"
@@ -22,7 +22,7 @@
         "development"
     ],
     "license": "GPL-3.0",
-    "version": "0.0.1",
+    "version": "0.0.3",
     "devDependencies": {
         "eslint": "~3.4.0",
         "eslint-config-airbnb-base": "~5.0.2",
