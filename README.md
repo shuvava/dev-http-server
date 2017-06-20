@@ -87,3 +87,18 @@ httpSrv.setJson('/test', 'src/db.json', 'id', false);
 // run server
 HttpSrv.run({ httpSrv });
 ```
+### Static content
+[static-content](https://github.com/shuvava/dev-http-server/tree/master/examples/static-content)
+```javascript
+// add reference to the module
+const HttpSrv = require('dev-http-server');
+// create instance
+const httpSrv = new HttpSrv();
+
+// for GET / server will return content of file index.html in folder /www
+// GET /file.html return content of file.html in folder /www
+httpSrv.setStatic('/', '/www', 'index.html');
+
+// run server
+HttpSrv.run({ httpSrv });
+```
