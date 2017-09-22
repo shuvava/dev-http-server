@@ -22,7 +22,7 @@
         "development"
     ],
     "license": "GPL-3.0",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "devDependencies": {
         "eslint": "~3.4.0",
         "eslint-config-airbnb-base": "~5.0.2",
@@ -30,6 +30,6 @@
     },
     "dependencies": {
         "lodash": "^4.7.0",
-        "mime": ">=1.2.5"
+        "mime": "~2.0.2"
     }
 }
